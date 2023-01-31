@@ -4,9 +4,16 @@ import { loadRemoteModule } from '@angular-architects/module-federation';
 
 const routes: Routes = [
   {
+    path: '',
+    loadChildren: () => import('./home/home.module').then(mod => mod.HomeComponentModule)
+  },
+  {
     path: 'mfe-navigation',
-    loadChildren: () => loadRemoteModule( 'mfe', './Request').then((m) => { console.log(m); return m.RequestModule }),
-    data: { origin: 'verti' }
+    loadChildren: () => loadRemoteModule({
+      type: 'manifest',
+      remoteName: 'mfe',
+      exposedModule: './Request'
+    }).then((m) => m.RequestModule)
   }
 ];
 
