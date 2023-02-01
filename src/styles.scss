@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+
+mfe-navigation-mets-layout-component {
+
+  --color-primary: red !important;
+  .c-header {background: red !important; }
+  button { padding: 8px; color: white; background: red}
+}
