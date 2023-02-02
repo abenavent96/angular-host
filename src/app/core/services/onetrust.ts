@@ -69,7 +69,7 @@ export class OneTrust {
       };
     } else { // Others
       script.onload = (e: any) => { this.onScriptLoaded(); };
-      script.onerror = () => { };
+      script.onerror = () => { console.log('host - on script not loaded'); };
     }
     this.appendScript(script);
   }
@@ -80,6 +80,7 @@ export class OneTrust {
   }
 
   private onScriptLoaded() {
+    console.log('host - on script loaded');
     this.scriptsLoaded++;
     if (this.scriptsLoaded === 3) { this.resolve(); }
   }
