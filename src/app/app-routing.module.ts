@@ -14,6 +14,14 @@ const routes: Routes = [
       remoteName: 'mfe',
       exposedModule: './Request'
     }).then((m) => m.RequestModule)
+  },
+  {
+    path: 'mfe-login',
+    loadChildren: () => loadRemoteModule({
+      type: 'manifest',
+      remoteName: 'mfe-login',
+      exposedModule: './Module'
+    }).then((m) => m.RemoteEntryModule)
   }
 ];
 

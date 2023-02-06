@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NavigationEnd, Router } from '@angular/router';
-import { filter } from 'rxjs';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -14,19 +13,9 @@ export class AppComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    this.router.events.pipe(
-      filter(event => { return event instanceof NavigationEnd; })
-    ).subscribe((event: any) =>
-      {
-        if (typeof window === undefined) { return; }
-        const listener = (event: any) => { console.log(event?.detail); };
-        console.log('remove');
-        window.removeEventListener('multimap:event', listener);
-        if (this.router.getCurrentNavigation()?.finalUrl?.toString().startsWith('/mfe-navigation')) {
-          console.log('add event');
-          window.addEventListener('multimap:event', listener);
-        }
-      })
+    if (typeof window === undefined) { return; }
+    const listener = (event: any) => { console.log(event?.detail); };
+    window.addEventListener('multimap:event', listener);
   }
 
 
