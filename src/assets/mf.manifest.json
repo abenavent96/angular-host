@@ -1,4 +1,4 @@
 {
-	"mfe": "http://poc-mfe.s3-website-eu-west-1.amazonaws.com/remoteEntry.mjs",
+	"mfe": "https://d3140l065qa3gs.cloudfront.net/remoteEntry.mjs",
 	"mfe-login": "http://localhost:8100/remoteEntry.mjs"
 }
