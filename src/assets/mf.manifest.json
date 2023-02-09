@@ -1,4 +1,5 @@
 {
-	"mfe": "https://d3140l065qa3gs.cloudfront.net/remoteEntry.mjs",
+	"mfe-navigation": "https://d3140l065qa3gs.cloudfront.net/remoteEntry.mjs",
+	"mfe": "http://localhost:9000/remoteEntry.mjs",
 	"mfe-login": "http://localhost:8100/remoteEntry.mjs"
 }
