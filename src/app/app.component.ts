@@ -18,6 +18,9 @@ export class AppComponent implements OnInit {
     if (typeof window === undefined) { return; }
     const listener = (event: any) => { this.auth.storeToken(); console.log(event); };
     window.addEventListener('mfe-login:event', listener);
+
+    const listener2 = (event: any) => { console.log(event.detail); };
+    window.addEventListener('multimap:event', listener2);
   }
 
 

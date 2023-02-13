@@ -8,7 +8,7 @@ const routes: Routes = [
     loadChildren: () => import('./home/home.module').then(mod => mod.HomeComponentModule)
   },
   {
-    path: 'mfe-navigation',
+    path: 'mfe-navigation/multimap',
     loadChildren: () => loadRemoteModule({
       type: 'manifest',
       remoteName: 'mfe',
@@ -20,6 +20,14 @@ const routes: Routes = [
     loadChildren: () => loadRemoteModule({
       type: 'manifest',
       remoteName: 'mfe-login',
+      exposedModule: './Module'
+    }).then((m) => m.RemoteEntryModule)
+  },
+  {
+    path: 'mfe-versions',
+    loadChildren: () => loadRemoteModule({
+      type: 'manifest',
+      remoteName: 'mfe-versions',
       exposedModule: './Module'
     }).then((m) => m.RemoteEntryModule)
   }
