@@ -1,6 +1,6 @@
 {
 	"mfe-navigation": "https://d3140l065qa3gs.cloudfront.net/remoteEntry.mjs",
-	"mfe": "http://localhost:9000/remoteEntry.mjs",
-	"mfe-login": "http://localhost:8100/remoteEntry.mjs",
+	"mfe": "http://poc-mfe.s3-website-eu-west-1.amazonaws.com/remoteEntry.mjs",
+	"mfe-login": "http://poc-mfe-login.s3-website-eu-west-1.amazonaws.com/remoteEntry.mjs",
 	"mfe-versions": "http://localhost:8200/remoteEntry.js"
 }
