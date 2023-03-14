@@ -9,6 +9,8 @@ import { AuthService } from './core/services/auth';
 })
 export class AppComponent implements OnInit {
 
+  title = '';
+
   constructor(
     private router: Router,
     private auth: AuthService

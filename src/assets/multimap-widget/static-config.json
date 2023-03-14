@@ -1,0 +1,11 @@
+{
+  "SHOW_MY_REQUEST_BUTTON": true,
+  "ORIGIN": "verti",
+
+  "INTRO_PAGE_DESCRIPTION": "Calidad Verti para tu casa o tu negocio. ",
+  "INTRO_PAGE_DESCRIPTION_DISCOUNT": "Por ser cliente de Verti <span style=\"color: #FF7000;\">tendrás un {{ value }}% de descuento</span> incluido automáticamente en el presupuesto final que te facilite nuestro profesional.",
+
+  "LOCATION_PAGE_DESCRIPTION": "Si el servicio coincide con alguna de tus direcciones registradas en Verti, selecciónala",
+
+  "PRODUCT_DETAIL_PAGE_DISCOUNT_TITLE": "Por ser cliente de Verti:"
+}

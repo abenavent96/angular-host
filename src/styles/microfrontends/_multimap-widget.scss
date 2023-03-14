@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@100;300;400;500;700;900&display=swap');
+
+multimap-widget-microfrontend-entry {
+    // Colors
+    --multimap-widget-color-primary-01:         #FF7000;
+    --multimap-widget-color-primary-02:         #FF9000;
+    --multimap-widget-color-primary-03:         #FFB401;
+
+    --multimap-widget-color-secondary-01:       #5F0062;
+    --multimap-widget-color-secondary-02:       #790270;
+    --multimap-widget-color-secondary-03:       #A51783;
+
+    --multimap-widget-color-black:              #152A35;
+    --multimap-widget-color-greyscale-01:       #4D5D66;
+    --multimap-widget-color-greyscale-02:       #859198;
+    --multimap-widget-color-greyscale-03:       #BDC4C9;
+    --multimap-widget-color-greyscale-04:       #D9DFE3;
+    --multimap-widget-color-greyscale-05:       #EDF1F3;
+    --multimap-widget-color-greyscale-06:       #f0f0f0;
+    --multimap-widget-color-white:              #FFFFFF;
+
+    --multimap-widget-color-info:               #3BD0D6;
+    --multimap-widget-color-success:            #4CAF50;
+    --multimap-widget-color-warning:            #EECA00;
+    --multimap-widget-color-error:              #FC2249;
+
+
+    // Progress bar
+    --multimap-widget-progress-bar-border-radius:           20px;
+    --multimap-widget-progress-bar-progress-color:          linear-gradient(135deg, var(--multimap-widget-color-primary-03) 0%, var(--multimap-widget-color-primary-01) 100%);
+    --multimap-widget-progress-bar-opacity:                 1;
+
+
+    // Button
+    --multimap-widget-button-border-radius:                 20px;
+    --multimap-widget-button-primary-linear-gradient:       linear-gradient(135deg, var(--multimap-widget-color-primary-03) 0%, var(--multimap-widget-color-primary-01) 100%);
+    --multimap-widget-button-secondary-linear-gradient:     linear-gradient(135deg, var(--multimap-widget-color-secondary-03) 0%, var(--multimap-widget-color-secondary-01) 100%);
+    --multimap-widget-button-padding-horizontal:            20px;
+    --multimap-widget-button-font-size:                     16px;
+}

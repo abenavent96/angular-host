@@ -1,3 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
 
-@import 'styles/multimap-variables';
+// Utils
+@import
+  'styles/utils/mixins';
+
+// Vendors
+@import
+  'styles/vendors/normalize';
+
+// Base
+@import
+  'styles/base/reset',
+  'styles/base/typography';
+
+// Microfrontends
+@import
+  'styles/microfrontends/multimap-widget';
